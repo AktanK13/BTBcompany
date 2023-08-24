@@ -4,7 +4,7 @@ import { BsFillTelephoneFill, BsInstagram, BsFacebook, BsFillEnvelopeFill, BsFil
 function TopHeader() {
 
     return (
-        <div className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out border-b-2`}>
+        <div className={`invisible md:visible fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out border-b-2`}>
             <div className="max-w-6xl mx-auto px-5 sm:px-6">
                 <div className="flex items-center justify-between h-12 md:h-12">
                     {/* Site branding */}

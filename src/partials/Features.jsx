@@ -43,7 +43,7 @@ function Features() {
 
             {/* Tabs items */}
             <div
-              className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
+              className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 px-6 lg:col-span-6 mb-8 md:mb-0 md:order-1"
               data-aos="zoom-y-out"
             >
               <Slider {...settings}>

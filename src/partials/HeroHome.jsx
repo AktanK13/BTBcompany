@@ -40,7 +40,7 @@ function HeroHome() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Hero content */}
-        <div className="pt-48 pb-12 md:pt-40 md:pb-20">
+        <div className="pt-36 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}
           <div className=" pt-28 text-center pb-12 md:pb-16">
             <h1
@@ -62,7 +62,7 @@ function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay="300"
               >
-                <div>
+                <div className='mb-6'>
                   <a
                     className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
                     href="#contacts"

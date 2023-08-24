@@ -19,14 +19,14 @@ const columns = [
         dataIndex: 'produst',
     },
     {
-        title: 'Цена(Бартер) за 1 м³',
+        title: 'Цена (Бартер) за 1 м³',
         dataIndex: 'priceB',
         sorter: {
             compare: (a, b) => a.priceB - b.priceB,
         },
     },
     {
-        title: 'Цена(Наличка) за 1 м³',
+        title: 'Цена (Наличка) за 1 м³',
         dataIndex: 'priceN',
         sorter: {
             compare: (a, b) => a.priceN - b.priceN,
@@ -92,7 +92,7 @@ const data = [
 
 const PriceList = () => {
     const [open, setOpen] = useState(false)
-   
+
     return (
         <div id='products'>
             <section className="relative">
@@ -102,13 +102,13 @@ const PriceList = () => {
                         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
                             <h2 className="h2 mb-4">Наша продукция</h2>
                         </div>
-                        <div className='flex flex-wrap gap-4'>
+                        <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-center justify-center md:max-w-2xl lg:max-w-none'>
                             <Card
                                 data-aos={open ? 'fade-up' : ''}
                                 hoverable
                                 style={{
+                                    maxWidth: '300px',
                                     overflow: "auto",
-                                    width: "23%",
                                     cursor: "default"
                                 }}
                                 cover={<img alt="example" src={b75} />}
@@ -121,7 +121,7 @@ const PriceList = () => {
                                 data-aos={open ? 'fade-up' : ''}
                                 hoverable
                                 style={{
-                                    width: "23%",
+                                    maxWidth: '300px',
                                     cursor: "default"
                                 }}
                                 cover={<img alt="example" src={b12} />}
@@ -134,7 +134,7 @@ const PriceList = () => {
                                 data-aos={open ? 'fade-up' : ''}
                                 hoverable
                                 style={{
-                                    width: "23%",
+                                    maxWidth: '300px',
                                     cursor: "default"
                                 }}
                                 cover={<img alt="example" src={b15} />}
@@ -149,7 +149,7 @@ const PriceList = () => {
                                 data-aos={open ? 'fade-up' : ''}
                                 hoverable
                                 style={{
-                                    width: "23%",
+                                    maxWidth: '300px',
                                     cursor: "default"
                                 }}
                                 cover={<img alt="example" src={b20} />}
@@ -162,7 +162,7 @@ const PriceList = () => {
                                     data-aos={open ? 'fade-up' : ''}
                                     hoverable
                                     style={{
-                                        width: "23%",
+                                        maxWidth: '300px',
                                         cursor: "default"
                                     }}
                                     cover={<img alt="example" src={b22} />}
@@ -174,7 +174,7 @@ const PriceList = () => {
                                     data-aos={open ? 'fade-up' : ''}
                                     hoverable
                                     style={{
-                                        width: "23%",
+                                        maxWidth: '300px',
                                         cursor: "default"
                                     }}
                                     cover={<img alt="example" src={b25} />}
@@ -186,7 +186,7 @@ const PriceList = () => {
                                     data-aos={open ? 'fade-up' : ''}
                                     hoverable
                                     style={{
-                                        width: "23%",
+                                        maxWidth: '300px',
                                         cursor: "default"
                                     }}
                                     cover={<img alt="example" src={b30} />}
@@ -207,6 +207,7 @@ const PriceList = () => {
 
                         <div className='mt-20' data-aos="zoom-y-out">
                             <Table
+                                id='price'
                                 pagination={false}
                                 columns={columns}
                                 dataSource={data}

@@ -8,6 +8,8 @@ import Testimonials from '../partials/Testimonials';
 import Footer from '../partials/Footer';
 import TopHeader from '../partials/TopHeader';
 import PriceList from '../partials/PriceList';
+import Sidebar from '../partials/Sidebar';
+
 
 function Home() {
   return (
@@ -16,6 +18,7 @@ function Home() {
       {/*  Site header */}
       <TopHeader/>
       <Header />
+      <Sidebar pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } right />
 
       {/*  Page content */}
       <main className="flex-grow">
