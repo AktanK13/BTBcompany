@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BsInstagram, BsFacebook, } from 'react-icons/bs'
+import { BsInstagram, BsTelegram, BsWhatsapp } from 'react-icons/bs'
 import emailjs from '@emailjs/browser';
 import { message, } from 'antd';
 
@@ -119,7 +119,7 @@ function Footer() {
             <li className="ml-4">
               <Link
                 to="#"
-                className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                className="flex justify-center items-center text-gray-600 hover:text-[#c32aa3] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Instagram"
               >
                 <BsInstagram className='text-lg' />
@@ -128,10 +128,19 @@ function Footer() {
             <li className="ml-4">
               <Link
                 to="#"
-                className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
-                aria-label="Facebook"
+                className="flex justify-center items-center text-gray-600 hover:text-[#0088cc] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                aria-label="Telegram"
               >
-                <BsFacebook className='text-xl' />
+                <BsTelegram className='text-xl' />
+              </Link>
+            </li>
+            <li className="ml-4">
+              <Link
+                to="#"
+                className="flex justify-center items-center text-gray-600 hover:text-[#25d366] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                aria-label="WhatsApp"
+              >
+                <BsWhatsapp className='text-xl' />
               </Link>
             </li>
           </ul>

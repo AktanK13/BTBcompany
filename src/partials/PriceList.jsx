@@ -144,20 +144,19 @@ const PriceList = () => {
                                     В15 – это хорошо известная строителям марка М200, которая считается рядовой, то есть к ней не предъявляется никаких особых требований.
                                 </p>
                             </Card>
-
-                            <Card
-                                data-aos={open ? 'fade-up' : ''}
-                                hoverable
-                                style={{
-                                    maxWidth: '300px',
-                                    cursor: "default"
-                                }}
-                                cover={<img alt="example" src={b20} />}
-                            >
-                                <h2 className='text-gray-900  text-lg font-bold'>Товарный бетон класса В20 (М250)</h2>
-                                <p>Данная марка тяжёлого бетона является проходной по своим характеристикам и чаще используется в устройстве армопояса.</p>
-                            </Card>
                             {open ? <>
+                                <Card
+                                    data-aos={open ? 'fade-up' : ''}
+                                    hoverable
+                                    style={{
+                                        maxWidth: '300px',
+                                        cursor: "default"
+                                    }}
+                                    cover={<img alt="example" src={b20} />}
+                                >
+                                    <h2 className='text-gray-900  text-lg font-bold'>Товарный бетон класса В20 (М250)</h2>
+                                    <p>Данная марка тяжёлого бетона является проходной по своим характеристикам и чаще используется в устройстве армопояса.</p>
+                                </Card>
                                 <Card
                                     data-aos={open ? 'fade-up' : ''}
                                     hoverable

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BsFillTelephoneFill, BsInstagram, BsFacebook, BsFillEnvelopeFill, BsFillGeoAltFill } from 'react-icons/bs'
+import { BsFillTelephoneFill, BsInstagram, BsTelegram, BsFillEnvelopeFill, BsWhatsapp, BsFillGeoAltFill } from 'react-icons/bs'
 function TopHeader() {
 
     return (
@@ -24,7 +24,7 @@ function TopHeader() {
                                     </li>
                                 </a>
                                 <li className="ml-4 flex items-center text-sm text-gray-600 mr-4 gap-1 cursor-pointer hover:text-black">
-                                    <BsFillGeoAltFill/>
+                                    <BsFillGeoAltFill />
                                     <p>Кыргызстан, г.Бишкек, ул.  </p>
                                 </li>
                             </ul>
@@ -38,7 +38,7 @@ function TopHeader() {
                             <li className="ml-4">
                                 <Link
                                     to="#"
-                                    className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                                    className="flex justify-center items-center text-gray-600 hover:text-[#c32aa3] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                                     aria-label="Instagram"
                                 >
                                     <BsInstagram className='text-lg' />
@@ -47,10 +47,19 @@ function TopHeader() {
                             <li className="ml-4">
                                 <Link
                                     to="#"
-                                    className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
-                                    aria-label="Facebook"
+                                    className="flex justify-center items-center text-gray-600 hover:text-[#0088cc] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                                    aria-label="Telegram"
                                 >
-                                    <BsFacebook className='text-xl' />
+                                    <BsTelegram className='text-xl' />
+                                </Link>
+                            </li>
+                            <li className="ml-4">
+                                <Link
+                                    to="#"
+                                    className="flex justify-center items-center text-gray-600 hover:text-[#25d366] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                                    aria-label="WhatsApp"
+                                >
+                                    <BsWhatsapp className='text-xl' />
                                 </Link>
                             </li>
                         </ul>
