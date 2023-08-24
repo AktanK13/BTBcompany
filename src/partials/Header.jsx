@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../public/logo.png'
-import Sidebar from './Sidebar';
-import "./sidebar.css";
 
 function Header() {
   const [top, setTop] = useState(true);
