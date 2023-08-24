@@ -205,7 +205,7 @@ const PriceList = () => {
                             </button>
                         </div>
 
-                        <div className='mt-20'>
+                        <div className='mt-20' data-aos="zoom-y-out">
                             <Table
                                 pagination={false}
                                 columns={columns}
