@@ -65,7 +65,7 @@ function HeroHome() {
                 <div>
                   <a
                     className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-                    href="#footer"
+                    href="#contacts"
                   >
                     <BsFillTelephoneFill className='mr-2' />
                      Получить консультацию 
