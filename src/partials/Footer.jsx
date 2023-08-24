@@ -147,7 +147,7 @@ function Footer() {
 
           {/* Copyrights note */}
           <div className="text-sm text-gray-600 mr-4">
-            Copyright &copy; 2023 CompanyName. All rights reserved
+            2023 &copy;  <span className='font-bold'>BTB company</span>. Все права защищены
           </div>
         </div>
       </div>

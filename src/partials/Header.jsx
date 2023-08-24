@@ -4,10 +4,8 @@ import logo from '../public/logo.png'
 
 function Header() {
   const [top, setTop] = useState(true);
-  
-  // detect whether user has scrolled the page down by 10px
+  let width = window.innerWidth;
   useEffect(() => {
-
     const scrollHandler = () => {
       window.pageYOffset > 10 ? setTop(false) : setTop(true);
     };
@@ -37,7 +35,9 @@ function Header() {
 
           {/* Site navigation */}
 
-          
+
+          {
+            width >= 768 ?
               <nav className="flex flex-grow">
                 <ul className="flex flex-grow justify-end flex-wrap items-center">
                   <li>
@@ -75,6 +75,10 @@ function Header() {
 
                 </ul>
               </nav>
+              :
+              <></>
+          }
+
         </div>
       </div>
     </header>

@@ -102,11 +102,12 @@ const PriceList = () => {
                         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
                             <h2 className="h2 mb-4">Наша продукция</h2>
                         </div>
-                        <div className='grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-center justify-center md:max-w-2xl lg:max-w-none'>
+                        <div className='min-w-full mx-auto grid gap-4 md:grid-cols-3 lg:grid-cols-3 items-start justify-center md:max-w-2xl lg:max-w-none'>
                             <Card
-                                data-aos={open ? 'fade-up' : ''}
+                                data-aos='fade-up'
                                 hoverable
                                 style={{
+                                    minHeight: '515px',
                                     maxWidth: '300px',
                                     overflow: "auto",
                                     cursor: "default"
@@ -118,9 +119,10 @@ const PriceList = () => {
                             </Card>
 
                             <Card
-                                data-aos={open ? 'fade-up' : ''}
+                                data-aos='fade-up'
                                 hoverable
                                 style={{
+                                    minHeight: '515px',
                                     maxWidth: '300px',
                                     cursor: "default"
                                 }}
@@ -131,9 +133,10 @@ const PriceList = () => {
                             </Card>
 
                             <Card
-                                data-aos={open ? 'fade-up' : ''}
+                                data-aos='fade-up'
                                 hoverable
                                 style={{
+                                    minHeight: '515px',
                                     maxWidth: '300px',
                                     cursor: "default"
                                 }}
@@ -149,6 +152,7 @@ const PriceList = () => {
                                     data-aos={open ? 'fade-up' : ''}
                                     hoverable
                                     style={{
+                                        minHeight: '515px',
                                         maxWidth: '300px',
                                         cursor: "default"
                                     }}
@@ -161,6 +165,7 @@ const PriceList = () => {
                                     data-aos={open ? 'fade-up' : ''}
                                     hoverable
                                     style={{
+                                        minHeight: '515px',
                                         maxWidth: '300px',
                                         cursor: "default"
                                     }}
@@ -173,6 +178,7 @@ const PriceList = () => {
                                     data-aos={open ? 'fade-up' : ''}
                                     hoverable
                                     style={{
+                                        minHeight: '515px',
                                         maxWidth: '300px',
                                         cursor: "default"
                                     }}
@@ -185,6 +191,7 @@ const PriceList = () => {
                                     data-aos={open ? 'fade-up' : ''}
                                     hoverable
                                     style={{
+                                        minHeight: '515px',
                                         maxWidth: '300px',
                                         cursor: "default"
                                     }}

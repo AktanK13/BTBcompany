@@ -51,22 +51,22 @@ function Testimonials() {
           <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="flex justify-center text-6xl">
-                <Image src={sertifikat} alt="sertifikat" />
+                <Image src={sertifikat} alt="sertifikat" loading="lazy" />
               </div>
               <div className="flex justify-center text-6xl">
-                <Image src={sertifikat} alt="sertifikat" />
+                <Image src={sertifikat} alt="sertifikat" loading="lazy" />
               </div>
               <div className="flex justify-center text-6xl">
-                <Image src={sertifikat} alt="sertifikat" />
+                <Image src={sertifikat} alt="sertifikat" loading="lazy" />
               </div>
               <div className="flex justify-center text-6xl">
-                <Image src={sertifikat} alt="sertifikat" />
+                <Image src={sertifikat} alt="sertifikat" loading="lazy" />
               </div>
               <div className="flex justify-center text-6xl">
-                <Image src={sertifikat} alt="sertifikat" />
+                <Image src={sertifikat} alt="sertifikat" loading="lazy" />
               </div>
               <div className="flex justify-center text-6xl">
-                <Image src={sertifikat} alt="sertifikat" />
+                <Image src={sertifikat} alt="sertifikat" loading="lazy" />
               </div>
               <div className="flex justify-center text-6xl">
                 <Image src={sertifikat} alt="sertifikat" />
