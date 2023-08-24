@@ -2,10 +2,19 @@ import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BsInstagram, BsFacebook, } from 'react-icons/bs'
 import emailjs from '@emailjs/browser';
+import { message, } from 'antd';
 
 function Footer() {
   const form = useRef();
   const [sendstatus, setSendStatus] = useState(false);
+  const [messageApi, contextHolder] = message.useMessage();
+
+  const success = () => {
+    messageApi.open({
+      type: 'success',
+      content: 'Ваш заявка была успешно отправлена',
+    });
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,6 +23,7 @@ function Footer() {
       .then((result) => {
         console.log(result.text);
         result.text === "OK" ? setSendStatus(false) : setSendStatus(true)
+        success()
         document.getElementById('name').value = ''
         document.getElementById('tele').value = ''
         document.getElementById('message').value = ''
@@ -28,6 +38,7 @@ function Footer() {
 
   return (
     <footer id='contacts'>
+      {contextHolder}
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Top area: Blocks */}
         <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200">
@@ -90,7 +101,7 @@ function Footer() {
                       required
                     />
                   </div>
-                  {sendstatus ? <p className='text-red-700 text-sm'>Упс! Что-то пошло не так</p>: <></>}
+                  {sendstatus ? <p className='text-red-700 text-sm'>Упс! Что-то пошло не так</p> : <></>}
                   <input
                     className='bg-gray-900 text-white w-[150px] py-2 px-10 rounded-md cursor-pointer hover:bg-gray-800 '
                     type="submit"
