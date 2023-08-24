@@ -1,3 +1,7 @@
+#page-wrap {
+    text-align: center;
+    overflow: auto;
+}
 
 .bm-item {
     display: inline-block;
@@ -32,7 +36,8 @@
 }
 
 .bm-menu {
-    background: rgb(25 25 25) !important;
+    background: rgb(25 25 25 / var(--tw-text-opacity));
+    ;
     padding: 3.5em 1.5em 0;
     font-size: 1.15em;
 }
@@ -46,6 +51,11 @@
 }
 
 .bm-overlay {
-    background: rgba(25, 25, 25, 0.3);
+    background: rgba(0, 0, 0, 0.3);
 }
 
+@media only screen and (max-width: 600px) {
+    .ant-table-cell {
+        padding: 8px !important;
+    }
+}
