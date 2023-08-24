@@ -19,14 +19,14 @@ const columns = [
         dataIndex: 'produst',
     },
     {
-        title: 'Цена(Бартер )',
+        title: 'Цена(Бартер) за 1 м³',
         dataIndex: 'priceB',
         sorter: {
             compare: (a, b) => a.priceB - b.priceB,
         },
     },
     {
-        title: 'Цена(Наличка)',
+        title: 'Цена(Наличка) за 1 м³',
         dataIndex: 'priceN',
         sorter: {
             compare: (a, b) => a.priceN - b.priceN,
