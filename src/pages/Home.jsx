@@ -12,13 +12,21 @@ import Sidebar from '../partials/Sidebar';
 
 
 function Home() {
+  let width = window.innerWidth;
+  console.log(width);
   return (
     <div className="flex flex-col min-h-screen overflow-hidden scroll-smooth">
 
       {/*  Site header */}
-      <TopHeader/>
+      <TopHeader />
       <Header />
-      <Sidebar pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } right />
+      {
+        width <= 768 ?
+          <Sidebar pageWrapId={"page-wrap"} outerContainerId={"outer-container"} right />
+          :
+          <></>
+
+      }
 
       {/*  Page content */}
       <main className="flex-grow">
@@ -26,7 +34,7 @@ function Home() {
         {/*  Page sections */}
         <HeroHome />
         <FeaturesHome />
-        <PriceList/>
+        <PriceList />
         <FeaturesBlocks />
         <Testimonials />
 

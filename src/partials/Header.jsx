@@ -4,8 +4,7 @@ import logo from '../public/logo.png'
 
 function Header() {
   const [top, setTop] = useState(true);
-  let width = window.innerWidth;
-  console.log(width);
+  
   // detect whether user has scrolled the page down by 10px
   useEffect(() => {
 
@@ -38,13 +37,7 @@ function Header() {
 
           {/* Site navigation */}
 
-          {
-            width <= 768 ?
-              <div className='block'>
-                {/* <Sidebar pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } /> */}
-                
-              </div>
-              :
+          
               <nav className="flex flex-grow">
                 <ul className="flex flex-grow justify-end flex-wrap items-center">
                   <li>
@@ -82,7 +75,6 @@ function Header() {
 
                 </ul>
               </nav>
-          }
         </div>
       </div>
     </header>
