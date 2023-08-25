@@ -7,7 +7,7 @@ import './utils/i18n'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense fallback={<div className=" w-full h-screen flex justify-center items-center  "><Spin size="large"></Spin>/></div>}>
+    <Suspense fallback={<div className=" w-full h-screen flex justify-center items-center  "><Spin size="large"></Spin></div>}>
       <Router>
         <App />
       </Router>
