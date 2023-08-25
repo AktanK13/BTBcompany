@@ -1,11 +1,13 @@
 import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom'
+import { Spin } from 'antd';
 import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App'
 import './utils/i18n'
+
 ReactDOM.render(
   <React.StrictMode>
-    <Suspense fallback={<h1>Loading ...</h1>}>
+    <Suspense fallback={<div className=" w-full h-screen flex justify-center items-center  "><Spin size="large"></Spin>/></div>}>
       <Router>
         <App />
       </Router>
