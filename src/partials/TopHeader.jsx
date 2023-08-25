@@ -36,31 +36,31 @@ function TopHeader() {
                     <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200">
                         <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
                             <li className="ml-4">
-                                <Link
-                                    to="#"
+                                <a
+                                    href="https://www.instagram.com/"
                                     className="flex justify-center items-center text-gray-600 hover:text-[#c32aa3] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                                     aria-label="Instagram"
                                 >
                                     <BsInstagram className='text-lg' />
-                                </Link>
+                                </a>
                             </li>
                             <li className="ml-4">
-                                <Link
-                                    to="#"
+                                <a
+                                    href="https://t.me/usercoder"
                                     className="flex justify-center items-center text-gray-600 hover:text-[#0088cc] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                                     aria-label="Telegram"
                                 >
                                     <BsTelegram className='text-xl' />
-                                </Link>
+                                </a>
                             </li>
                             <li className="ml-4">
-                                <Link
-                                    to="#"
+                                <a
+                                    href="https://wa.me/996226906966" target="_blank"
                                     className="flex justify-center items-center text-gray-600 hover:text-[#25d366] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                                     aria-label="WhatsApp"
                                 >
                                     <BsWhatsapp className='text-xl' />
-                                </Link>
+                                </a>
                             </li>
                         </ul>
                     </div>

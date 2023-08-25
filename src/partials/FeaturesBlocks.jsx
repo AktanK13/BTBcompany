@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {BsAwardFill, BsShieldFillCheck, BsFillPatchCheckFill, BsBookmarkCheckFill, BsFillHouseGearFill, BsHourglassSplit} from 'react-icons/bs'
 
 function FeaturesBlocks() {
+  const { t } = useTranslation()
   return (
     <section className="relative">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
@@ -15,11 +17,10 @@ function FeaturesBlocks() {
           {/* Section header */}
           <div className="flex flex-col items-center max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4 max-w-[18ch]">
-              Наши преимущества
+              {t("ourskills")}
             </h2>
             <p className="text-xl text-gray-600">
-              Покупайте бетон у производителя,
-              без посредников и переплат!
+            {t("ourskillstext")}
             </p>
           </div>
 
@@ -29,67 +30,54 @@ function FeaturesBlocks() {
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl min-h-[280px]" data-aos="zoom-y-out">
               <BsAwardFill className='text-white text-[55px] rounded-full  bg-red-600 p-3'/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-              Надёжность
+              {t("skills1")}
               </h4>
-              <p className="text-gray-600 text-center">
-              Надёжность производства обеспечивают современное оборудование, отвечающее всем международным стандартам суммарной мощностью выпуска 100 м³ бетона в 1 час.
-              </p>
+              <p className="text-gray-600 text-center">{t("skill1text")}</p>
             </div>
 
             {/* 2nd item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl min-h-[280px]" data-aos="zoom-y-out">
               <BsShieldFillCheck className='text-white text-[55px] rounded-full  bg-red-600 p-3'/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-              Гарантия
+              {t("skills2")}
               </h4>
-              <p className="text-gray-600 text-center">
-              Собственная лаборатория с высококвалифицированным персоналом позволяет следить за высоким качеством продукции на всех этапах.
-              </p>
+              <p className="text-gray-600 text-center">{t("skills2text")}</p>
             </div>
 
             {/* 3rd item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl min-h-[280px]" data-aos="zoom-y-out">
               <BsBookmarkCheckFill className='text-white text-[55px] rounded-full  bg-red-600 p-3'/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-              Сертификация
-
+              {t("skills3")}
               </h4>
-              <p className="text-gray-600 text-center">
-              Все марки товарного бетона и растворов сертифицированы.
-              </p>
+              <p className="text-gray-600 text-center">{t("skills3text")}</p>
             </div>
 
             {/* 4th item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl min-h-[280px]" data-aos="zoom-y-out">
               <BsHourglassSplit className='text-white text-[55px] rounded-full  bg-red-600 p-3'/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-              Точный расчёт
+              {t("skills4")}
               </h4>
-              <p className="text-gray-600 text-center">
-              Собственный автопарк оборудован новейшей системой GPS-навигацией, что позволяет точно рассчитывать время и поставлять бетон в сроки.
-              </p>
+              <p className="text-gray-600 text-center">{t("skills4text")}</p>
             </div>
 
             {/* 5th item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl min-h-[280px]" data-aos="zoom-y-out">
               <BsFillPatchCheckFill  className='text-white text-[55px] rounded-full  bg-red-600 p-3'/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-              Качество
+              {t("skills5")}
               </h4>
-              <p className="text-gray-600 text-center">
-              Качество продукции — все материалы, используемые в производстве, соответствуют ГОСТ и имеют высокие качества.
-              </p>
+              <p className="text-gray-600 text-center">{t("skills5text")}</p>
             </div>
 
             {/* 6th item */}
             <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl min-h-[280px]" data-aos="zoom-y-out">
               <BsFillHouseGearFill className='text-white text-[55px] rounded-full  bg-red-600 p-3'/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-              Технологии
+              {t("skills6")}
               </h4>
-              <p className="text-gray-600 text-center">
-              В наличии миксеры от 3 м³ до 11 м³, автопомпы от 45 до 55 м, стационарные помпы мощностью подачи до 100 метров.
-              </p>
+              <p className="text-gray-600 text-center">{t("skills6text")}</p>
             </div>
           </div>
         </div>

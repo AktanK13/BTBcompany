@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { BsInstagram, BsTelegram, BsWhatsapp } from 'react-icons/bs'
 import emailjs from '@emailjs/browser';
 import { message, } from 'antd';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+  const { t } = useTranslation()
   const form = useRef();
   const [sendstatus, setSendStatus] = useState(false);
   const [messageApi, contextHolder] = message.useMessage();
@@ -45,30 +47,30 @@ function Footer() {
           {/* 1st block */}
           <div className=" sm:col-span-12 lg:col-span-6">
             <div className="mb-2">
-              <p className='text-2xl font-bold'>Контакты</p>
+              <p className='text-2xl font-bold'>{t("contacts")}</p>
             </div>
             <div className="text-sm text-gray-600 mb-2">
-              <p>Наш адрес</p>
+              <p>{t("ouradress")}</p>
               <p className='text-lg font-bold'>Кыргызстан, г.Бишкек, ул. </p>
             </div>
             <div className="text-sm text-gray-600 mb-2">
-              <p>Наши телефоны</p>
-              <a href="tel:+996552676758" className='text-lg font-bold'>+996(552)67-67-58</a>
+              <p>{t("ourtel")}</p>
+              <a href="tel:+996505281361" className='text-lg font-bold'>+996(505) 28-13-61</a>
             </div>
             <div className="text-sm text-gray-600 mb-2">
               <p>WhatsApp</p>
-              <a href="tel:+996706888869" className='text-lg font-bold'>+996(0706)88-88-69</a>
+              <a href="https://wa.me/996226906966" target="_blank" className='text-lg font-bold'>+996(226) 90-69-66</a>
             </div>
             <div className="text-sm text-gray-600 mb-2">
-              <p>Email адрес</p>
+              <p>{t("ouremail")}</p>
               <a href="mailto:kerimbekov1233@gmail.com" className='text-lg font-bold'>email@mail.com</a>
             </div>
           </div>
 
 
           {/* 2th block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-6">
-            <h6 className="text-gray-800 font-bold mb-2 text-2xl">Обратная связь</h6>
+          <div className="sm:col-span-12 md:col-span-6 lg:col-span-6">
+            <h6 className="text-gray-800 font-bold mb-2 text-2xl">{t("callback")}</h6>
             <form ref={form} onSubmit={sendEmail}>
               <div className="flex flex-wrap mb-4">
                 <div className="w-full flex flex-col gap-4">
@@ -78,7 +80,7 @@ function Footer() {
                       name="user_name"
                       type="name"
                       className="form-input w-full text-gray-800 px-3 py-2 pr-12 text-sm"
-                      placeholder="Как Вас зовут?"
+                      placeholder={t("name")}
                       required
                     />
                     <input
@@ -86,7 +88,7 @@ function Footer() {
                       name="user_telephone"
                       type="tel"
                       className="form-input w-full text-gray-800 px-3 py-2 pr-12 text-sm"
-                      placeholder="Ваш номер телефона"
+                      placeholder={t("telephone")}
                       required
                     />
 
@@ -97,15 +99,15 @@ function Footer() {
                       name='message'
                       type="email"
                       className="form-input w-full text-gray-800 px-3 py-2 pr-12 text-sm h-20"
-                      placeholder="Ваше сообщение"
+                      placeholder={t("massage")}
                       required
                     />
                   </div>
                   {sendstatus ? <p className='text-red-700 text-sm'>Упс! Что-то пошло не так</p> : <></>}
                   <input
-                    className='bg-gray-900 text-white w-[150px] py-2 px-10 rounded-md cursor-pointer hover:bg-gray-800 '
+                    className='bg-gray-900 text-white w-[200px] py-2 px-10 rounded-md cursor-pointer hover:bg-gray-800 '
                     type="submit"
-                    value="Send" />
+                    value={t("send")} />
                 </div>
               </div>
             </form>
@@ -117,37 +119,37 @@ function Footer() {
           {/* Social links */}
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li className="ml-4">
-              <Link
-                to="#"
+              <a
+                href = "https://www.instagram.com/"
                 className="flex justify-center items-center text-gray-600 hover:text-[#c32aa3] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Instagram"
               >
                 <BsInstagram className='text-lg' />
-              </Link>
+              </a>
             </li>
             <li className="ml-4">
-              <Link
-                to="#"
+              <a
+                href="https://t.me/usercoder"
                 className="flex justify-center items-center text-gray-600 hover:text-[#0088cc] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="Telegram"
               >
                 <BsTelegram className='text-xl' />
-              </Link>
+              </a>
             </li>
             <li className="ml-4">
-              <Link
-                to="#"
+              <a
+                href="https://wa.me/996226906966" target="_blank"
                 className="flex justify-center items-center text-gray-600 hover:text-[#25d366] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                 aria-label="WhatsApp"
               >
                 <BsWhatsapp className='text-xl' />
-              </Link>
+              </a>
             </li>
           </ul>
 
           {/* Copyrights note */}
           <div className="text-sm text-gray-600 mr-4">
-            2023 &copy;  <span className='font-bold'>BTB company</span>. Все права защищены
+            2023 &copy;  <span className='font-bold'>BTB company</span>. {t("rights")}
           </div>
         </div>
       </div>

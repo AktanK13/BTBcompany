@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../public/logo.png'
+import { useTranslation } from 'react-i18next';
 
 function Header() {
   const [top, setTop] = useState(true);
+  const { t, i18n } = useTranslation();
+
   let width = window.innerWidth;
+  
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   useEffect(() => {
     const scrollHandler = () => {
       window.pageYOffset > 10 ? setTop(false) : setTop(true);
@@ -33,9 +41,6 @@ function Header() {
             </Link>
           </div>
 
-          {/* Site navigation */}
-
-
           {
             width >= 768 ?
               <nav className="flex flex-grow">
@@ -45,7 +50,7 @@ function Header() {
                       href="#aboutus"
                       className="font-bold text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                     >
-                      О нас
+                      {t("about")}
                     </a>
                   </li>
                   <li>
@@ -53,7 +58,7 @@ function Header() {
                       href="#products"
                       className="font-bold text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                     >
-                      Продукция
+                      {t("products")}
                     </a>
                   </li>
                   <li>
@@ -61,7 +66,7 @@ function Header() {
                       href="#price"
                       className="font-bold text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                     >
-                      Цены
+                      {t("prices")}
                     </a>
                   </li>
                   <li>
@@ -69,10 +74,22 @@ function Header() {
                       href="#contacts"
                       className="font-bold text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                     >
-                      Контакты
+                       {t("contacts")}
                     </a>
                   </li>
+                  <li>
+                    {
+                      i18n.language === 'ru' ?
+                        <button
+                          className="btn text-xs p-2 text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-1"
+                          onClick={() => changeLanguage("kg")}>KG</button>
+                        :
+                        <button
+                          className="btn text-xs p-2 text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-1"
+                          onClick={() => changeLanguage("ru")}>RU</button>
+                    }
 
+                  </li>
                 </ul>
               </nav>
               :

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { BsFillTelephoneFill, BsInstagram } from 'react-icons/bs'
 
 
 function HeroHome() {
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
+  const { t } = useTranslation()
   let width = window.innerWidth;
   return (
     <section className="relative">
@@ -55,7 +56,7 @@ function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Производство готового товарного бетона и раствора всех марок ! 
+                {t("herotext")}
               </p>
               <div
                 className="max-w-xs gap-10 mx-auto sm:max-w-none sm:flex sm:justify-center"
@@ -68,7 +69,7 @@ function HeroHome() {
                     href="#contacts"
                   >
                     <BsFillTelephoneFill className='mr-2' />
-                     Получить консультацию 
+                    {t("callus")}
                   </a>
                 </div>
                 <div>
@@ -79,7 +80,7 @@ function HeroHome() {
                     target="_blank"
                   >
                      <BsInstagram className='text-lg mr-2' />
-                     Наш инстаграм 
+                     {t("ourinst")}
                   </a>
                 </div>
               </div>
