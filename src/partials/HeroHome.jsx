@@ -9,7 +9,7 @@ function HeroHome() {
     <section className="relative">
       {/* Illustration behind hero content */}
       <div
-        className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
+        className="absolute left-1/2 transform -translate-x-1/2 bottom-0 -z-1 pointer-events-none"
         aria-hidden="true"
       >
         <svg
