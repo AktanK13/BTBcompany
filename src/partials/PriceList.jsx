@@ -25,14 +25,14 @@ const PriceList = () => {
             dataIndex: 'produst',
         },
         {
-            title: `${t("price")}(Бартер) за 1 м³`,
+            title: `${t("price")} (Бартер) за 1 м³`,
             dataIndex: 'priceB',
             sorter: {
                 compare: (a, b) => a.priceB - b.priceB,
             },
         },
         {
-            title: `${t("price")}(Наличка) за 1 м³`,
+            title: `${t("price")} (Наличка) за 1 м³`,
             dataIndex: 'priceN',
             sorter: {
                 compare: (a, b) => a.priceN - b.priceN,
