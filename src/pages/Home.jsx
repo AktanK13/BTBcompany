@@ -10,10 +10,11 @@ import TopHeader from '../partials/TopHeader';
 import PriceList from '../partials/PriceList';
 import Sidebar from '../partials/Sidebar';
 
+import { FloatButton } from 'antd';
+
 
 function Home() {
   let width = window.innerWidth;
-  console.log(width);
   return (
     <div className="flex flex-col min-h-screen overflow-hidden scroll-smooth">
 
@@ -36,6 +37,7 @@ function Home() {
         <FeaturesHome />
         <PriceList />
         <FeaturesBlocks />
+        <FloatButton.BackTop />
         <Testimonials />
 
       </main>

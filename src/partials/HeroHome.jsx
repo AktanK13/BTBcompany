@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { BsFillTelephoneFill, BsInstagram } from 'react-icons/bs'
+import { BsFillTelephoneFill, BsInstagram , } from 'react-icons/bs'
 
 
 function HeroHome() {
@@ -39,7 +39,7 @@ function HeroHome() {
         </svg>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-screen ">
         {/* Hero content */}
         <div className="pt-36 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}
@@ -65,7 +65,7 @@ function HeroHome() {
               >
                 <div className='mb-6'>
                   <a
-                    className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
+                    className="btn text-white bg-gray-900 hover:bg-gray-800 sm:w-auto sm:ml-4 hover:text-[1.1rem] min-w-[300px] max-h-[3rem] "
                     href="#contacts"
                   >
                     <BsFillTelephoneFill className='mr-2' />
@@ -74,7 +74,7 @@ function HeroHome() {
                 </div>
                 <div>
                   <a
-                    className="btn text-white bg-red-600 hover:bg-red-700 w-full mb-4 sm:w-auto sm:mb-0
+                    className="btn text-white bg-red-600 hover:bg-red-700 w-full mb-4 sm:w-auto sm:mb-0 hover:text-[1.1rem] min-w-[250px] max-h-[3rem]
                     "
                     href="https://www.instagram.com/"
                     target="_blank"

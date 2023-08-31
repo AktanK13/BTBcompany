@@ -53,28 +53,164 @@ function Testimonials() {
           <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="flex justify-center text-6xl">
-                <Image src={sertifikat} alt="sertifikat" loading="lazy" />
+                <Image.PreviewGroup
+                  items={[
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat
+                  ]}
+                >
+                  <Image
+                    width={200}
+                    src={sertifikat}
+                  />
+                </Image.PreviewGroup>
+                {/* <Image src={sertifikat} alt="sertifikat" loading="lazy" /> */}
               </div>
               <div className="flex justify-center text-6xl">
-                <Image src={sertifikat} alt="sertifikat" loading="lazy" />
+                <Image.PreviewGroup
+                  items={[
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat
+                  ]}
+                >
+                  <Image
+                    width={200}
+                    src={sertifikat}
+                  />
+                </Image.PreviewGroup>
+                {/* <Image src={sertifikat} alt="sertifikat" loading="lazy" /> */}
               </div>
               <div className="flex justify-center text-6xl">
-                <Image src={sertifikat} alt="sertifikat" loading="lazy" />
+                <Image.PreviewGroup
+                  items={[
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat
+                  ]}
+                >
+                  <Image
+                    width={200}
+                    src={sertifikat}
+                  />
+                </Image.PreviewGroup>
+                {/* <Image src={sertifikat} alt="sertifikat" loading="lazy" /> */}
               </div>
               <div className="flex justify-center text-6xl">
-                <Image src={sertifikat} alt="sertifikat" loading="lazy" />
+                <Image.PreviewGroup
+                  items={[
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat
+                  ]}
+                >
+                  <Image
+                    width={200}
+                    src={sertifikat}
+                  />
+                </Image.PreviewGroup>
+                {/* <Image src={sertifikat} alt="sertifikat" loading="lazy" /> */}
               </div>
               <div className="flex justify-center text-6xl">
-                <Image src={sertifikat} alt="sertifikat" loading="lazy" />
+                <Image.PreviewGroup
+                  items={[
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat
+                  ]}
+                >
+                  <Image
+                    width={200}
+                    src={sertifikat}
+                  />
+                </Image.PreviewGroup>
+                {/* <Image src={sertifikat} alt="sertifikat" loading="lazy" /> */}
               </div>
               <div className="flex justify-center text-6xl">
-                <Image src={sertifikat} alt="sertifikat" loading="lazy" />
+                <Image.PreviewGroup
+                  items={[
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat
+                  ]}
+                >
+                  <Image
+                    width={200}
+                    src={sertifikat}
+                  />
+                </Image.PreviewGroup>
+                {/* <Image src={sertifikat} alt="sertifikat" loading="lazy" /> */}
               </div>
               <div className="flex justify-center text-6xl">
-                <Image src={sertifikat} alt="sertifikat" />
+                <Image.PreviewGroup
+                  items={[
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat
+                  ]}
+                >
+                  <Image
+                    width={200}
+                    src={sertifikat}
+                  />
+                </Image.PreviewGroup>
+                {/* <Image src={sertifikat} alt="sertifikat" /> */}
               </div>
               <div className="flex justify-center text-6xl">
-                <Image src={sertifikat} alt="sertifikat" />
+                <Image.PreviewGroup
+                  items={[
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat,
+                    sertifikat
+                  ]}
+                >
+                  <Image
+                    width={200}
+                    src={sertifikat}
+                  />
+                </Image.PreviewGroup>
+                {/* <Image src={sertifikat} alt="sertifikat" /> */}
               </div>
             </div>
           </div>

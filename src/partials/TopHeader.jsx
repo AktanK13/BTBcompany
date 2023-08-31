@@ -12,7 +12,7 @@ function TopHeader() {
                         <div className="md:flex md:items-center md:justify-between">
                             <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
                                 <a href="tel:+996706888869">
-                                    <li className="flex items-center text-sm text-gray-600 mr-4 gap-1 cursor-pointer hover:text-black">
+                                    <li className="flex items-center text-sm text-gray-600 mr-4 gap-1 cursor-pointer hover:text-black ">
                                         <BsFillTelephoneFill />
                                         <p>+996(706)88-88-69 </p>
                                     </li>
@@ -25,7 +25,7 @@ function TopHeader() {
                                 </a>
                                 <li className="ml-4 flex items-center text-sm text-gray-600 mr-4 gap-1 cursor-pointer hover:text-black">
                                     <BsFillGeoAltFill />
-                                    <p>Кыргызстан, г.Бишкек, ул.  </p>
+                                    <p>г.Бишкек, Ленинский Рн. ул.Павлова, д. 21</p>
                                 </li>
                             </ul>
                         </div>
@@ -41,7 +41,7 @@ function TopHeader() {
                                     className="flex justify-center items-center text-gray-600 hover:text-[#c32aa3] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                                     aria-label="Instagram"
                                 >
-                                    <BsInstagram className='text-lg' />
+                                    <BsInstagram className='text-xl hover:text-[1.35rem]'  />
                                 </a>
                             </li>
                             <li className="ml-4">
@@ -50,7 +50,7 @@ function TopHeader() {
                                     className="flex justify-center items-center text-gray-600 hover:text-[#0088cc] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                                     aria-label="Telegram"
                                 >
-                                    <BsTelegram className='text-xl' />
+                                    <BsTelegram className='text-xl hover:text-[1.35rem]' />
                                 </a>
                             </li>
                             <li className="ml-4">
@@ -59,7 +59,7 @@ function TopHeader() {
                                     className="flex justify-center items-center text-gray-600 hover:text-[#25d366] bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                                     aria-label="WhatsApp"
                                 >
-                                    <BsWhatsapp className='text-xl' />
+                                    <BsWhatsapp className='text-xl hover:text-[1.35rem]' />
                                 </a>
                             </li>
                         </ul>

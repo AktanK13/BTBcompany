@@ -21,7 +21,6 @@ function Features() {
 
   return (
     <section className="relative bg-gray-100 pb-12" id='aboutus'>
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div
         className="absolute inset-0 pointer-events-none mb-16"
         aria-hidden="true"
@@ -34,9 +33,9 @@ function Features() {
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="zoom-out-right">
               <div className="pr-4 mb-8">
-                <h3 className="h3 mb-3">{t("aboutcompany")}</h3>
-                <p className="text-xl text-gray-600">
-                  <span className='font-bold text-gray-800'>{t("company")} </span> {t("aboutcompanytext")}</p>
+                <h1 className="h3 mb-3">{t("aboutcompany")}</h1>
+                <h1 className="text-xl text-gray-600">
+                  <span className='font-bold text-gray-800'>{t("company")} </span> {t("aboutcompanytext")}</h1>
               </div>
             </div>
 
@@ -47,26 +46,25 @@ function Features() {
             >
               <Slider {...settings}>
                 <div>
-                  <img src={image3} />
+                  <img src={image3}  alt='ОсОО «БТБ компани» – производит готовый товарный бетон, с доставкой на строительные площадки. Продажа и доставка бетона любой марки.' />
                 </div>
                 <div>
-                  <img src={image3} />
+                  <img src={image3} alt='ОсОО «БТБ компани» – производит готовый товарный бетон, с доставкой на строительные площадки. Продажа и доставка бетона любой марки.' />
 
                 </div>
                 <div>
-                  <img src={image3} />
+                  <img src={image3} alt='ОсОО «БТБ компани» – производит готовый товарный бетон, с доставкой на строительные площадки. Продажа и доставка бетона любой марки.' />
+                </div>
+                <div>
+                  <img src={image3} alt='ОсОО «БТБ компани» – производит готовый товарный бетон, с доставкой на строительные площадки. Продажа и доставка бетона любой марки.' />
 
                 </div>
                 <div>
-                  <img src={image3} />
+                  <img src={image3} alt='ОсОО «БТБ компани» – производит готовый товарный бетон, с доставкой на строительные площадки. Продажа и доставка бетона любой марки.' />
 
                 </div>
                 <div>
-                  <img src={image3} />
-
-                </div>
-                <div>
-                  <img src={image3} />
+                  <img src={image3} alt='ОсОО «БТБ компани» – производит готовый товарный бетон, с доставкой на строительные площадки. Продажа и доставка бетона любой марки.' />
 
                 </div>
               </Slider>
